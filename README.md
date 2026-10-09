@@ -4,7 +4,7 @@ A Retrieval-Augmented Generation (RAG) app that lets you upload one or more PDFs
 
 Built with LangChain, Groq, Hugging Face embeddings, ChromaDB and Streamlit.
 
-![App screenshot](screenshot.png)
+
 
 ## Features
 
