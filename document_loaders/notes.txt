@@ -1,0 +1,36 @@
+Artificial Intelligence and RAG Notes
+
+1. What is Artificial Intelligence?
+Artificial Intelligence (AI) is the field of computer science that builds systems capable of performing tasks that normally need human intelligence, such as understanding language, recognizing images, making decisions, and learning from data.
+
+2. What is Machine Learning?
+Machine Learning (ML) is a subset of AI where models learn patterns from data instead of being explicitly programmed. The three main types are supervised learning, unsupervised learning, and reinforcement learning.
+
+3. What is a Large Language Model?
+A Large Language Model (LLM) is a neural network trained on huge amounts of text to predict the next word. Examples include Llama, Mistral, GPT, and Gemini. LLMs can write, summarize, translate, and answer questions.
+
+4. Limitations of LLMs
+LLMs can hallucinate, which means they sometimes give confident but wrong answers. They also do not know about private documents or events that happened after their training date.
+
+5. What is RAG?
+Retrieval-Augmented Generation (RAG) is a technique that gives an LLM extra knowledge at question time. Instead of relying only on training data, the system first retrieves relevant information from a document collection and then passes it to the LLM as context.
+
+6. Steps in a RAG Pipeline
+Step 1: Load documents such as PDF, TXT, or DOCX files.
+Step 2: Split the documents into small chunks.
+Step 3: Convert each chunk into an embedding (a numeric vector).
+Step 4: Store the embeddings in a vector database such as ChromaDB.
+Step 5: When a user asks a question, convert the question into an embedding and find the most similar chunks.
+Step 6: Send the question and the retrieved chunks to the LLM to generate the final answer.
+
+7. What are Embeddings?
+Embeddings are lists of numbers that represent the meaning of text. Texts with similar meaning have embeddings that are close to each other. A popular open-source embedding model is all-MiniLM-L6-v2 from Hugging Face.
+
+8. What is a Vector Database?
+A vector database stores embeddings and can quickly search for the most similar ones. ChromaDB, FAISS, and Pinecone are common choices. ChromaDB is simple and runs locally, which makes it great for beginners.
+
+9. What is Groq?
+Groq is an AI inference platform known for extremely fast response speed. It hosts open models like Llama and can be accessed with a simple API key.
+
+10. Why use RAG?
+RAG reduces hallucinations, lets the model answer from private or up-to-date data, and avoids the cost of retraining or fine-tuning a model.

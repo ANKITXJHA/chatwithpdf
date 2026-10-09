@@ -1,0 +1,35 @@
+# ---- LLM providers ----
+groq                          # Groq API client (LLM inference)
+huggingface_hub               # Hugging Face Hub access (models, Inference API)
+
+# ---- Embeddings (Hugging Face) ----
+sentence-transformers         # Local embedding models (e.g. all-MiniLM-L6-v2)
+transformers                  # Hugging Face model loading
+torch                         # Backend for sentence-transformers / transformers
+
+# ---- Vector database ----
+chromadb                      # Vector store
+
+# ---- RAG orchestration (LangChain) ----
+langchain
+langchain-community
+langchain-groq                # Groq integration for LangChain
+langchain-huggingface         # Hugging Face embeddings integration for LangChain
+langchain-chroma              # ChromaDB integration for LangChain
+langchain-text-splitters      # Chunking documents
+
+# ---- Document loading ----
+pypdf                         # PDF loading
+python-docx                   # DOCX loading
+beautifulsoup4                # HTML / web page parsing
+unstructured                  # Generic document parsing (optional)
+
+# ---- Utilities ----
+python-dotenv                 # Load API keys from .env file
+numpy
+pandas
+tqdm
+
+# ---- UI (pick one) ----
+streamlit                     # Quick web UI for the RAG app
+# flask                       # Alternative: Flask backenduv 
